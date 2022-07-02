@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="shortcut icon" type="image/png" href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fsjcit.ac.in%2Fwp-content%2Fuploads%2F2022%2F03%2Fmathematics-png.jpg&imgrefurl=https%3A%2F%2Fsjcit.ac.in%2Fmaths-staff%2F&tbnid=xk7h5Q0H0QX6qM&vet=12ahUKEwiapfTxwdn4AhW3kdgFHfG1DBAQMygBegUIARDJAQ..i&docid=gkZYAjb3JJnJKM&w=1200&h=800&q=maths&ved=2ahUKEwiapfTxwdn4AhW3kdgFHfG1DBAQMygBegUIARDJAQ">
+    </head>
+    <body style="background-color: powderblue;">
+       <center>
+    <h1 style="color: blue;"><marquee>Maths Calculator</marquee></h1>
+    <hr>
+ <div>First Number&ensp;&ensp;&ensp;&ensp;
+     <input type="number" id="input1">
+ </div>
+ &ensp;
+ &ensp;
+ &ensp;
+ &ensp;
+ <div>Second Number&ensp;&ensp;&ensp;&ensp;
+    <input type="number" id="input2">
+</div>
+<hr>
+<button onclick="myfunction()">Add</button>&ensp;
+<button onclick="substract()">Substract</button>&ensp;
+<button onclick="divide()">Divide</button>&ensp;
+<button onclick="multiply()">Multiply</button>
+<h2>Answer Is</h2><h2 id="result" style="color: blue;">Your Answer Here</h2>
+<script>
+    function myfunction() {
+        var result= Number(document.getElementById("input1").value) + Number(document.getElementById("input2").value);
+        document.getElementById("result").innerText = result;
+        alert(result);
+    }
+    function substract() {
+        var result= Number(document.getElementById("input1").value) - Number(document.getElementById("input2").value);
+        document.getElementById("result").innerText = result;
+        alert(result)
+    }
+    function divide() {
+        var result= Number(document.getElementById("input1").value) / Number(document.getElementById("input2").value);
+        alert(result)
+        document.getElementById("result").innerText = result;
+    }
+    function multiply() {
+        var result= Number(document.getElementById("input1").value) * Number(document.getElementById("input2").value);
+        alert(result)
+        document.getElementById("result").innerText = result;
+    }
+</script>
+</center>
+    </body>
+</html>
+
+
